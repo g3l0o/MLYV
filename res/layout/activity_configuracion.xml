@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/alfa" >
+    
+	<TextView
+        android:layout_gravity="center" 
+        android:layout_marginBottom="12dp" 
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/txVieConfiguracion" 
+        android:text="Configuración" 
+        android:textSize="25sp" />
+	
+	<TextView
+        android:layout_marginBottom="12dp" 
+        android:layout_marginTop="12dp" 
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/txVieIntereses" 
+        android:text="Intereses" 
+        android:textSize="20sp" />
+
+	<CheckBox
+	    android:id="@+id/checkBoxHistoria"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Historia"
+	    android:checked="false"
+	     />
+
+	<CheckBox
+	    android:id="@+id/checkBoxArte"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Arte"
+	    android:checked="false"
+	     />
+	
+	<CheckBox
+	    android:id="@+id/checkBoxPintura"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Pintura"
+	    android:checked="false"
+	     />	
+	     
+	<CheckBox
+	    android:id="@+id/checkBoxMusica"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Música"
+	    android:checked="false"
+	     />
+	
+	<CheckBox
+	    android:id="@+id/checkBoxModa"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Moda"
+	    android:checked="false"
+	     />
+	
+	<CheckBox
+	    android:id="@+id/checkBoxPlazas"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Plazas"
+	    android:checked="false"
+	     />
+	
+	<Button
+        android:id="@+id/BotonAceptarConf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Aceptar" />
+		
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MLYV</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_evaluar">Evaluar</string>
+    <string name="title_activity_mas_opciones">MasOpciones</string>
+    <string name="title_activity_horario">Horario</string>
+    <string name="title_activity_atributos">Atributos</string>
+    <string name="title_activity_inicio">Inicio</string>
+    <string name="title_activity_registro">Registro</string>
+    <string name="title_activity_configuracion">Configuracion</string>
+    <string name="title_activity_plan">Plan</string>
+    <string name="title_activity_acerca_de">Acerca De</string>
+
+    <string-array name="adultos">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    
+    <string-array name="menores">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    
+    <string-array name="comidas">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    
+    <string-array name="alimentos">
+        <item>Italiana</item>
+        <item>Mexicana</item>
+        <item>Rápida</item>
+    </string-array>
+    <string-array name="intereses">
+        <item>Historia</item>
+        <item>Arte</item>
+        <item>Musica</item>
+        <item>Pintura</item>
+        <item>Moda</item>
+        <item>Plazas</item>
+    </string-array>
+    <string-array name="transporte">
+        <item>A pie</item>
+        <item>Carro</item>
+        <item>Metro</item>
+        <item>Metrobus</item>
+    </string-array>
+
+    <string name="title_activity_detalles">Detalles</string>
+    <string name="title_activity_acerca_de">AcercaDe</string>
+
+</resources>

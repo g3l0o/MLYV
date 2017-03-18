@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/alfa"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txViePlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="46dp"
+                android:text="¿Qué hago?"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="50dp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txViePlan"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Comida"
+                android:textSize="30dp" />
+
+            <Spinner
+                android:id="@+id/spinnerAlimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerAlimento"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Lugares a visitar"
+                android:textSize="30dp" />
+
+            <Spinner
+                android:id="@+id/spinnerIntereses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView2"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="30dp"
+                android:text="Intereses" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerIntereses"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Transporte"
+                android:textSize="30dp" />
+
+            <Spinner
+                android:id="@+id/spinnerTransporte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView3"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="30dp"
+                android:text="Transporte" />
+
+            <Button
+                android:id="@+id/BotonAceptarPlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerTransporte"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:text="Aceptar"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

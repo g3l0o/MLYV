@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/mlyv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="México Lindo y Viajero"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mlyv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="Version 1.0"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/mlyvimagen"
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:layout_below="@+id/version"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/acercatexto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/mlyvimagen"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:text="Ésta aplicación utiliza tu ubicación GPS para mostrar sitios de tu interés que se encuentren en un rango de distancia adecuado. En el listado de sitios de interés podemos encontrar museos, restaurantes, antros/bares, parques, plazas, cafeterías, etc. Éste proyecto busca aumentar el turismo y la economía México."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/desarrolladores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/acercatexto"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:text="Idea original, diseño y desarrollo:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rogelio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/desarrolladores"
+                android:layout_below="@+id/desarrolladores"
+                android:layout_marginTop="15dp"
+                android:text="Rogelio Rivera Meléndez"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/victor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rogelio"
+                android:layout_below="@+id/rogelio"
+                android:layout_marginTop="15dp"
+                android:text="Nelson Victor Cruz Hernández  "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/rosario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/victor"
+                android:layout_below="@+id/victor"
+                android:layout_marginTop="15dp"
+                android:text="Rosario Madariaga Martínez"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/veronica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rosario"
+                android:layout_below="@+id/rosario"
+                android:layout_marginTop="15dp"
+                android:text="Verónica Eunice Fajardo Vega"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/nombres_agr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/agradeciemientos"
+                android:layout_below="@+id/agradeciemientos"
+                android:layout_marginTop="15dp"
+                android:text="Ma. de los Angeles Junco Rey"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/agradeciemientos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/veronica"
+                android:layout_below="@+id/veronica"
+                android:layout_marginTop="50dp"
+                android:text="Agradeciemientos:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,346 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/alfa" >
+
+            <TextView
+                android:id="@+id/textViewTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Personaliza tu viaje:"
+                android:textSize="50dp" />
+
+            <TextView
+                android:id="@+id/textViewAdultos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewTitulo"
+                android:layout_marginLeft="20dp"
+                android:text="Adultos: "
+                android:textSize="30dp" />
+
+            <Spinner
+                android:id="@+id/spinnerAdultos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewAdultos"
+                android:layout_toRightOf="@+id/textViewMenores" />
+
+            <TextView
+                android:id="@+id/textViewMenores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/spinnerAdultos"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="27dp"
+                android:text="Menores: "
+                android:textSize="30dp" />
+
+            <Spinner
+                android:id="@+id/spinnerMenores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spinnerAdultos"
+                android:layout_alignTop="@+id/textViewMenores" />
+
+            <TextView
+                android:id="@+id/textViewPresupuesto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/spinnerMenores"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="27dp"
+                android:text="Presupuesto: "
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/editTextPresupuesto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewPresupuesto"
+                android:layout_toRightOf="@+id/textViewPresupuesto"
+                android:ems="5"
+                android:hint="100.00"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textViewAutomovil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewPresupuesto"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="27dp"
+                android:text="Automovil: "
+                android:textSize="30dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxAutomovil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewAutomovil"
+                android:layout_toRightOf="@+id/textViewAutomovil" />
+
+            <TextView
+                android:id="@+id/textViewFechaLlegada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewAutomovil"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="27dp"
+                android:text="Fecha Llegada: "
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/buttonFechaLlegada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewFechaLlegada"
+                android:layout_toRightOf="@+id/textViewFechaLlegada"
+                android:text="Fecha" />
+            
+           
+            <TextView
+                android:id="@+id/textViewFechaModificadaLlegada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/buttonFechaLlegada"
+                android:layout_toRightOf="@+id/buttonFechaLlegada"
+                android:text=""
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textViewFechaRegreso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewFechaLlegada"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="27dp"
+                android:text="Fecha Regreso: "
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/buttonFechaRegreso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewFechaRegreso"
+                android:layout_toRightOf="@+id/textViewFechaRegreso"
+                android:text="Fecha" />
+            
+            <TextView
+                android:id="@+id/textViewFechaModificadaRegreso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/buttonFechaRegreso"
+                android:layout_toRightOf="@+id/buttonFechaRegreso"
+                android:text=""
+                android:textSize="30dp" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="4dip"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/buttonFechaRegreso"
+                android:background="#FF909090" />
+
+            <TextView
+                android:id="@+id/textViewComer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Comida"
+                android:textSize="50dp" />
+            
+            <TextView
+                android:id="@+id/textViewMinDineroComida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewComer"
+                android:layout_marginLeft="20dp"
+                android:text="¿Cuánto gastarían mínimo en comida?: "
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/editTextMinDineroComida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewMinDineroComida"
+                android:ems="5"
+                android:hint="100.00"
+                android:layout_marginLeft="40dp"
+                android:inputType="numberDecimal" />
+            
+            <TextView
+                android:id="@+id/textViewMinComida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/editTextMinDineroComida"
+                android:layout_marginLeft="20dp"
+                android:text="¿Cuántas veces quieren comer al día?: "
+                android:textSize="30dp" />
+
+            <Spinner
+                android:id="@+id/spinnerMinComida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@+id/textViewMinComida"/>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="4dip"
+                android:layout_below="@+id/spinnerMinComida"
+                android:background="#FF909090" />
+
+            <TextView
+                android:id="@+id/textViewGustaria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="¿Qué te gustaría visitar?"
+                android:textSize="50dp" />
+
+            <TextView
+                android:id="@+id/textViewBarrios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewGustaria"
+                android:layout_marginLeft="20dp"
+                android:text="Barrios Mágicos: "
+                android:textSize="30dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxBarrios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewBarrios"
+                android:layout_toRightOf="@+id/textViewBarrios" />
+
+            <TextView
+                android:id="@+id/textViewMuseos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewBarrios"
+                android:layout_marginLeft="20dp"
+                android:text="Museos: "
+                android:textSize="30dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxMuseos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewMuseos"
+                android:layout_toRightOf="@+id/textViewMuseos" />
+
+            <TextView
+                android:id="@+id/textViewHoteles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewMuseos"
+                android:layout_marginLeft="20dp"
+                android:text="Hoteles: "
+                android:textSize="30dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxHoteles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewHoteles"
+                android:layout_toRightOf="@+id/textViewHoteles" />
+
+            <TextView
+                android:id="@+id/textViewSitios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewHoteles"
+                android:layout_marginLeft="20dp"
+                android:text="Sitios de Interés: "
+                android:textSize="30dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxSitios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewSitios"
+                android:layout_toRightOf="@+id/textViewSitios" />
+
+            <TextView
+                android:id="@+id/textViewParques"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewSitios"
+                android:layout_marginLeft="20dp"
+                android:text="Parques: "
+                android:textSize="30dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxParques"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewParques"
+                android:layout_toRightOf="@+id/textViewParques" />
+            
+            <TextView
+                android:id="@+id/textViewRecorridos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewParques"
+                android:layout_marginLeft="20dp"
+                android:text="Recorridos: "
+                android:textSize="30dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxRecorridos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewRecorridos"
+                android:layout_toRightOf="@+id/textViewRecorridos" />
+            
+            <Button
+                android:id="@+id/buttonGenerar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textViewRecorridos"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="15dp"
+                android:text="Generar"
+                android:textSize="30dp" />
+            
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mlyv.app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <permission
+        android:name="your.package.name.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="your.package.name.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconoandroid"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAtcuBLprbTbxSBQkQuOHWt7B95YDnmHog" />
+
+        <activity
+            android:name="mlyv.app.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="mlyv.app.Menu"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name="mlyv.app.Evaluar"
+            android:label="@string/title_activity_evaluar" >
+        </activity>
+        <activity
+            android:name="mlyv.app.MasOpciones"
+            android:label="@string/title_activity_mas_opciones" >
+        </activity>
+        <activity
+            android:name="mlyv.app.Horario"
+            android:label="@string/title_activity_horario" >
+        </activity>
+        <activity
+            android:name="mlyv.app.Atributos"
+            android:label="@string/title_activity_atributos" >
+        </activity>
+        <activity
+            android:name="mlyv.app.Inicio"
+            android:label="@string/title_activity_inicio" >
+        </activity>
+        <activity
+            android:name="mlyv.app.Registro"
+            android:label="@string/title_activity_registro" >
+        </activity>
+        <activity
+            android:name="mlyv.app.Configuracion"
+            android:label="@string/title_activity_configuracion" >
+        </activity>
+        <activity
+            android:name="mlyv.app.Plan"
+            android:label="@string/title_activity_plan" >
+        </activity>
+        <activity
+            android:name="mlyv.app.Detalles"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_detalles" >
+        </activity>
+        <activity
+            android:name="mlyv.app.MapaRuta"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="mapa" >
+        </activity>
+        <activity
+            android:name="mlyv.app.AcercaDe"
+            android:label="Acerca de"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog" >
+        </activity>
+        <activity
+            android:name="mlyv.app.infoLugar"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/alfa" >
+
+            <TextView
+                android:id="@+id/txVieRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Registro:"
+                android:textSize="50dp" />
+
+            <TextView
+                android:id="@+id/txtVieUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txVieRegistro"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="27dp"
+                android:text="Nombre:"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/EditTextNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/txtVieUsuario"
+                android:layout_toRightOf="@+id/txtVieUsuario"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/txtViewApellidoPaterno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txtVieUsuario"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="27dp"
+                android:text="Apellido Paterno:"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/EditTextApellidoPaterno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/txtViewApellidoPaterno"
+                android:layout_toRightOf="@+id/txtViewApellidoPaterno"
+                android:ems="10"
+                android:hint="Apellido Paterno"
+                android:inputType="textPersonName" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtViewApellidoMaterno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txtViewApellidoPaterno"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="27dp"
+                android:text="Apellido Materno: "
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/EditTextApellidoMaterno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/txtViewApellidoMaterno"
+                android:layout_toRightOf="@+id/txtViewApellidoMaterno"
+                android:ems="10"
+                android:hint="Apellido Materno"
+                android:inputType="textPersonName" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtViewFechaNac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txtViewApellidoMaterno"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="27dp"
+                android:text="Fecha de Nacimiento: "
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/BtnFechaNac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/txtViewFechaNac"
+                android:layout_toRightOf="@+id/txtViewFechaNac"
+                android:text="Elige Fecha" />
+
+            <TextView
+                android:id="@+id/textViewNacimientoModificada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/BtnFechaNac"
+                android:layout_toRightOf="@+id/BtnFechaNac"
+                android:text=""
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/txtViewUsuarioReg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txtViewFechaNac"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="27dp"
+                android:text="Usuario: "
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/EditTextUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/txtViewUsuarioReg"
+                android:layout_toRightOf="@+id/txtViewUsuarioReg"
+                android:ems="10"
+                android:hint="Usuario"
+                android:inputType="text" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtViewContrasenaRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txtViewUsuarioReg"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="27dp"
+                android:text="Contraseña: "
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/Contrasena1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/txtViewContrasenaRegistro"
+                android:layout_toRightOf="@+id/txtViewContrasenaRegistro"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/BotonAceptarReg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtViewContrasenaRegistro"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Aceptar"
+                android:textSize="30dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
